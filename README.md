@@ -29,17 +29,12 @@ See the list of containers in your system (running vs running & exited):
 	docker ps
     docker ps -a
 
-See the _top_ processes running inside your container with:
+See the top processes running inside your container with:
 
     docker top <CONTAINER ID>
 
 ## 2.2 Building Docker images
-
-Clone the code repository:
-
-    git clone https://github.com/CiscoDevNet/app-first-security-code.git
-
-Navigate to the docker-lab directory in the cloned repository and study the app.py file. This is the application that you are going to deploy.
+Navigate to the docker-lab directory in the cloned repository and study the flask-app.py file. This is the application that you are going to deploy.
 
 Now study the Dockerfile
 
@@ -60,4 +55,3 @@ https://developer.cisco.com/learning/modules/cisco-app-first-security-docker/doc
 EKS
 
 # 5. To Do
-Create my own repo with content from https://github.com/CiscoDevNet/app-first-security-code.git
