@@ -7,4 +7,4 @@ metadata:
 spec:
   containers:
   - name: web-app
-    image: fracaen/my-web-app:latest
+    image: <your_username>/my-web-app:latest
