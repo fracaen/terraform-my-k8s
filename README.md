@@ -58,7 +58,16 @@ In another terminal:
 
     docker kill web-app
 
+Push to Docker Hub:
+
+    docker push <your_username>/my-web-app
+
+
+
 # 3. Kubernetes 
+
+    kubectl get services
+    kubectl get nodes
 
 
 # 4. Terraform 
@@ -66,7 +75,8 @@ In another terminal:
 EKS
 
 # 5. To Do
-report error in https://developer.cisco.com/learning/modules/cisco-app-first-security-docker/docker-lab-03-build/step/3 - should be container ID or name, not image name
+* docker push at end of section 2
+* report error in https://developer.cisco.com/learning/modules/cisco-app-first-security-docker/docker-lab-03-build/step/3 - should be container ID or name, not image name
 
 # 6. References
 https://developer.cisco.com/learning/modules/cisco-app-first-security-docker/docker-lab-02-setup/step/1
