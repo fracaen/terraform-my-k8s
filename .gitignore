@@ -1,0 +1,10 @@
+.DS_Store
+3-terraform-eks-lab/aws-creds.txt
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
