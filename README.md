@@ -6,6 +6,7 @@ Compartimentalize and limit process resources
 ## 2.1 Basic Docker operations
 Test your installation with:
 
+    docker search hello-world
     docker run hello-world
 
 Comes from https://hub.docker.com/_/hello-world/
@@ -63,7 +64,6 @@ Push to Docker Hub:
     docker push <your_username>/my-web-app
 
 
-
 # 3. Kubernetes 
 ## 3.1 Initial test
     kubectl get services
@@ -117,16 +117,42 @@ Clean up:
     kubectl delete deployment web-app-deployment
 
 # 4. Terraform 
-  
-EKS
+## 4.1 Terraform a Kubernetes cluster (AWS EKS)
+If needed, download AWS cli: https://aws.amazon.com/cli/
 
-# 5. To Do
-* docker push at end of section 2
+Study the .tf files
+
+    terraform init
+    terraform plan
+    terraform deploy
+    aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)
+
+## 4.2 Terraform an application onto that EKS cluster
+Study the .tf files
+
+    terraform init
+    terraform plan
+    terraform deploy
+
+# 5. Final Cleanup
+In **both** Terraform workspaces / directories:
+
+    terraform destroy
+
+Restaure kubectl to Docker Desktop config
+
+    kubectl config use-context docker-desktop
+
+# 6. To Do
 * report error in https://developer.cisco.com/learning/modules/cisco-app-first-security-docker/docker-lab-03-build/step/3 - should be container ID or name, not image name
 
-# 6. References
+# 7. References
 https://developer.cisco.com/learning/modules/cisco-app-first-security-docker/docker-lab-02-setup/step/1
 
 https://developer.cisco.com/learning/modules/cisco-app-first-security-docker/docker-lab-03-build/step/1
 
 https://developer.cisco.com/learning/tracks/containers/containers-mgmt/containers-deploy-to-k8s/step/2
+
+https://learn.hashicorp.com/tutorials/terraform/eks
+
+https://learn.hashicorp.com/tutorials/terraform/kubernetes-provider
