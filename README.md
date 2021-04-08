@@ -124,7 +124,7 @@ Study the .tf files
 
     terraform init
     terraform plan
-    terraform deploy
+    terraform apply
     aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)
 
 ## 4.2 Terraform an application onto that EKS cluster
@@ -132,7 +132,7 @@ Study the .tf files
 
     terraform init
     terraform plan
-    terraform deploy
+    terraform apply
 
 # 5. Final Cleanup
 In **both** Terraform workspaces / directories:
