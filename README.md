@@ -143,10 +143,9 @@ Restaure kubectl to Docker Desktop config
 
     kubectl config use-context docker-desktop
 
-# 6. To Do
-* report error in https://developer.cisco.com/learning/modules/cisco-app-first-security-docker/docker-lab-03-build/step/3 - should be container ID or name, not image name
+# 6. References
+https://github.com/juliogomez/docker_cheatsheet
 
-# 7. References
 https://developer.cisco.com/learning/modules/cisco-app-first-security-docker/docker-lab-02-setup/step/1
 
 https://developer.cisco.com/learning/modules/cisco-app-first-security-docker/docker-lab-03-build/step/1
