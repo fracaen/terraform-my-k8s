@@ -134,7 +134,7 @@ Study the .tf files
     terraform plan
     terraform apply
 
-# 5. Final Cleanup
+## 4.3. Terraform Cleanup
 In **both** Terraform workspaces / directories:
 
     terraform destroy
@@ -143,7 +143,7 @@ Restaure kubectl to Docker Desktop config
 
     kubectl config use-context docker-desktop
 
-# 6. References
+# 5. References
 https://github.com/juliogomez/docker_cheatsheet
 
 https://developer.cisco.com/learning/modules/cisco-app-first-security-docker/docker-lab-02-setup/step/1
