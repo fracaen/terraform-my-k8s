@@ -1,5 +1,5 @@
 # 1. Pre-history
-Started with namespaces 2002 / cgroups 2007  
+Started with namespaces 2002 / cgroups 2008  
 Compartimentalize and limit process resources
 
 # 2. Docker Containers
