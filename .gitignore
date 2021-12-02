@@ -8,3 +8,5 @@
 *.tfstate
 *.tfstate.*
 
+# terraform lock files
+**/.terraform.lock.hcl
