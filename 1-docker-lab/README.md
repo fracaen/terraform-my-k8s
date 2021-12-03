@@ -68,7 +68,7 @@ Observe that the image was created with:
 
 Run the image as a container after it is built:
 
-    docker run --name web-app -p 5000:5000 <your_username>/my-web-app
+    docker run --name web-app -p 5500:5500 <your_username>/my-web-app
 
 In another terminal:
 

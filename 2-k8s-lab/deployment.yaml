@@ -18,4 +18,4 @@ spec:
       - name: web-app
         image: <your_username>/my-web-app:latest
         ports:
-        - containerPort: 5000
+        - containerPort: 5500

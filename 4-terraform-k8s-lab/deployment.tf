@@ -25,7 +25,7 @@ resource "kubernetes_deployment" "web-app-deployment" {
           name  = "web-app"
 
           port {
-            container_port = 5000
+            container_port = 5500
           }
 
           resources {
