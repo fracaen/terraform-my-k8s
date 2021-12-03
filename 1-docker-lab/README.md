@@ -5,13 +5,22 @@ Test your installation with:
     docker search hello-world
     docker run hello-world
 
-Comes from https://hub.docker.com/_/hello-world/
+Comes from https://hub.docker.com/_/hello-world/ . What is Docker Hub?
     
-Run [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu) in a container and print a string:
+Let's run [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu) in a container:
+
+    docker run ubuntu
+
+What happened and why?
+How is that possible on macOS or Windows? 
+
+Let's echo world from ubuntu:
 
     docker run ubuntu /bin/echo hello world
 
-Run an interactive shell in Ubuntu:
+Is the container still running? Why not?
+
+Let's run an interactive shell in Ubuntu:
 
     docker run -t -i ubuntu /bin/bash
         ls
@@ -31,6 +40,16 @@ See the top processes running inside your container with:
 Kill it from the outside
     
     docker kill <container id>
+
+Let's run and exit a few times, and we see containers piling up
+
+    docker ps -a
+    docker start <container id>
+    docker prune
+
+To prevent containers from piling up, auto-delete on exit:
+
+    docker run -ti --rm ubuntu
 
 ## Building Docker images
 Navigate to the docker-lab directory in the cloned repository and study the flask-app.py file. 

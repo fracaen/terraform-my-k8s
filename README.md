@@ -4,7 +4,7 @@
 1. [Create a k8s EKS cluster on AWS with Terraform](3-terraform-eks-lab)
 1. [Deploy an app on that k8s EKS cluster with Terraform](4-terraform-k8s-lab)
 
-# References
+## References
 https://github.com/juliogomez/docker_cheatsheet
 
 https://developer.cisco.com/learning/modules/cisco-app-first-security-docker/docker-lab-02-setup/step/1
