@@ -74,7 +74,15 @@ In another terminal:
 
     docker kill web-app
 
-Push to Docker Hub:
+To start it again:
+
+    docker start web-app
+
+Log in your local Docker Desktop to Docker Hub:
+    
+    docker login
+
+Push your image to Docker Hub and then review on the web site:
 
     docker push <your_username>/my-web-app
 
