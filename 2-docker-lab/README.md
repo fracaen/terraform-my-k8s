@@ -1,9 +1,8 @@
-install git
-GIT CLONE OR DOWNLOAD
-cd and ls
+ToDo:
 
-call to action/ learning follow-up
-
+* add call to action/ learning follow-up
+* add uname
+* add detach
 
 # Docker Containers
 ## Basic Docker operations
