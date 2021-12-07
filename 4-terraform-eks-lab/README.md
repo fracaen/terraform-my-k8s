@@ -8,7 +8,7 @@ Study the .tf files
     terraform apply
     aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)
 
-Continue to [deploying an app on your k8s cluster](../4-terraform-k8s-lab), or stop here and...
+Continue to [deploying an app on your k8s cluster](../5-terraform-k8s-lab), or stop here and...
 
 ## Terraform Cleanup
 

@@ -1,3 +1,10 @@
+install git
+GIT CLONE OR DOWNLOAD
+cd and ls
+
+call to action/ learning follow-up
+
+
 # Docker Containers
 ## Basic Docker operations
 Test your installation with:
@@ -45,7 +52,7 @@ Let's run and exit a few times, and we see containers piling up
 
     docker ps -a
     docker start <container id>
-    docker prune
+    docker container prune
 
 To prevent containers from piling up, auto-delete on exit:
 
@@ -69,6 +76,8 @@ Observe that the image was created with:
 Run the image as a container after it is built:
 
     docker run --name web-app -p 5500:5500 <your_username>/my-web-app
+
+DETACH
 
 In another terminal:
 
