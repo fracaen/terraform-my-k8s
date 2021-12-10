@@ -1,9 +1,3 @@
-ToDo:
-
-* add call to action/ learning follow-up
-* add uname
-* add detach
-
 # Docker Containers
 ## Basic Docker operations
 Test your installation with:
@@ -31,6 +25,7 @@ Let's run an interactive shell in Ubuntu:
     docker run -t -i ubuntu /bin/bash
         ls
         cat /etc/issue
+        uname -a
         ps aux
         exit
 
@@ -38,6 +33,11 @@ In another terminal: see the list of containers in your system (running vs runni
 
 	docker ps
     docker ps -a
+
+Restart the last ubuntu container in interactive mode
+
+    docker start -i <container id>
+    docker ps
 
 See the top processes running inside your container with:
 
@@ -49,8 +49,9 @@ Kill it from the outside
 
 Let's run and exit a few times, and we see containers piling up
 
+    docker run -t -i ubuntu /bin/bash
+        exit
     docker ps -a
-    docker start <container id>
     docker container prune
 
 To prevent containers from piling up, auto-delete on exit:
@@ -62,7 +63,7 @@ Navigate to the docker-lab directory in the cloned repository and study the flas
 
 Now study the Dockerfile
 
-Build the Docker image by running the following command in the root directory of the application:
+Build the Docker image by running the following command in the root directory of the application (replace <your_username> with your Docker Hub username):
 
     docker build --tag <your_username>/my-web-app .
 
@@ -76,14 +77,22 @@ Run the image as a container after it is built:
 
     docker run --name web-app -p 5500:5500 <your_username>/my-web-app
 
-DETACH
-
 In another terminal:
 
     docker kill web-app
 
-To start it again:
+Try running the container again with the same command. Why do you get an error?
+Delete the container:
+    
+    docker rm web-app
 
+Now run it in detached mode:
+
+    docker run --name web-app -p 5500:5500 -d fracaen/my-web-app
+
+Kill it and then restart it:
+
+    docker kill web-app
     docker start web-app
 
 Log in your local Docker Desktop to Docker Hub:

@@ -8,7 +8,7 @@ Pods are the simplest building block in Kubernetes, similar to the docker run co
 * Starts up only one instance of your container image.
 * Will not keep restarting the container if it finishes/fails/dies.
 
-Navigate to the docker-lab directory in the cloned repository and study the pod.yaml file.
+Navigate to the k8s-lab directory in the cloned repository and study the pod.yaml file.
 
     kubectl get pod
     kubectl create -f pod.yaml
