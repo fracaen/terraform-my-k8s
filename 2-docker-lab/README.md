@@ -88,7 +88,7 @@ Delete the container:
 
 Now run it in detached mode:
 
-    docker run --name web-app -p 5500:5500 -d fracaen/my-web-app
+    docker run --name web-app -p 5500:5500 -d <your_username>/my-web-app
 
 Kill it and then restart it:
 

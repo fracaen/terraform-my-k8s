@@ -1,5 +1,6 @@
 # Kubernetes 
 ## Initial test
+    kubectl config use-context docker-desktop
     kubectl get services
     kubectl get nodes
 
