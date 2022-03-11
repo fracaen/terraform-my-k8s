@@ -95,7 +95,7 @@ Kill it and then restart it:
     docker kill web-app
     docker start web-app
 
-Log in your local Docker Desktop to Docker Hub:
+Log in your local Docker Desktop to Docker Hub **with your Docker Hub username**:
     
     docker login
 

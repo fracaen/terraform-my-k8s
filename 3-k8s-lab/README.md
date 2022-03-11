@@ -17,7 +17,7 @@ Navigate to the k8s-lab directory in the cloned repository and study the pod.yam
     kubectl logs web-app-pod
     kubectl describe pod web-app
 
-You cannot connect to the IP listed by flask yet because you don't need to create a...
+You cannot connect to the IP listed by flask yet because you need to create a...
 
 ## Kubernetes Services
 Services expose a container or group of containers to access from outside the cluster. Services can also support load balancing across multiple pods.
