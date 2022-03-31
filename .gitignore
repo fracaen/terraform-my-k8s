@@ -1,4 +1,6 @@
 .DS_Store
+5-terraform-cloud-router/aws-creds.txt
+
 
 # Local .terraform directories
 **/.terraform/*
