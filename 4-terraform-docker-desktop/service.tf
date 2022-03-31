@@ -14,6 +14,7 @@ resource "kubernetes_service" "web-app-service" {
   }
 }
 
+# Display the randomly generated load balancer port
 output "service_random_port" {
   value = kubernetes_service.web-app-service.spec[0].port[0].node_port
 }
