@@ -21,7 +21,7 @@ resource "kubernetes_deployment" "web-app-deployment" {
       }
       spec {
         container {
-          image = "<your_username>/my-web-app"
+          image = "fracaen/my-web-app"
           name  = "web-app"
 
           port {

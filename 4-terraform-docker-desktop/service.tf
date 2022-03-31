@@ -7,7 +7,7 @@ resource "kubernetes_service" "web-app-service" {
       App = kubernetes_deployment.web-app-deployment.spec.0.template.0.metadata[0].labels.App
     }
     port {
-      port        = 80
+      port        = 5500
       target_port = 5500
     }
 

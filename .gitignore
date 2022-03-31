@@ -1,5 +1,4 @@
 .DS_Store
-4-terraform-eks-lab/aws-creds.txt
 
 # Local .terraform directories
 **/.terraform/*
