@@ -26,20 +26,16 @@ resource "aws_instance" "c8kv" {
         key_name                = "FCKeyPair1"
 
 	user_data = <<-EOF
-			hostname		= "aws_c8kv"
-			license			= "ipbase"
-			ios-config-100		= "aaa new-model"
-			ios-config-110		= "aaa authentication login default local"
-			ios-config-120		= "ip domain name cisco.local"
-			ios-config-130		= "crypto key generate rsa general-keys modulus 4096"
-			ios-config-140		= "ip ssh version 2"
-			ios-config-150		= "ip ssh time-out 120"
-			ios-config-160		= "username cisco123 privilege 15 secret cisco123"
-			ios-config-170		= "enable secret cisco123"
-			ios-config-180		= "hostname aws_router"
-			ios-config-190		= "line vty 0 530"
-			ios-config-210		= "privilege level 15"
-		EOF
+Section: IOS configuration
+hostname fctest
+ip domain name cisco.local
+aaa new-model
+aaa authentication login default local
+crypto key generate rsa general-keys modulus 4096
+ip ssh version 2
+username cisco123 privilege 15 secret cisco123
+enable secret cisco123
+EOF
 }
 
 resource "aws_security_group" "sg_allow_ssh" {
