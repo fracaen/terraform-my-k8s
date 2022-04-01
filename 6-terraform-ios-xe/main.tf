@@ -9,6 +9,7 @@ terraform {
 provider "iosxe" {
     host = "https://<my-router-ip>"
     device_username = "cisco123"
+    device_password = "cisco123"
     request_timeout = 30
     insecure = true
 }

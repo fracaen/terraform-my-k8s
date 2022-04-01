@@ -35,6 +35,7 @@ crypto key generate rsa general-keys modulus 4096
 ip ssh version 2
 username cisco123 privilege 15 secret cisco123
 enable secret cisco123
+restconf
 EOF
 }
 
