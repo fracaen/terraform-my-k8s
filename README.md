@@ -3,6 +3,7 @@
 1. [Docker](2-docker-lab)
 1. [Kubernetes](3-k8s-lab) (k8s)
 1. [Terraform](4-terraform-docker-desktop)
+1. [Catalyst 8000v on AWS EC2](5-terraform-cloud-router)
 
 ## References
 https://github.com/juliogomez/docker_cheatsheet
